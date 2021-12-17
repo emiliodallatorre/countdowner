@@ -1,3 +1,4 @@
+import 'package:countdowner/interface/pages/countdown_list_page.dart';
 import 'package:countdowner/references.dart';
 import 'package:flutter/material.dart';
 
@@ -8,6 +9,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(References.appName)),
+      body: CountdownListPage(),
     );
   }
 }
