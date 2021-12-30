@@ -1,3 +1,4 @@
+import 'package:countdowner/interface/widget/updating_duration.dart';
 import 'package:countdowner/models/countdown_model.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +19,7 @@ class CountdownListElement extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          UpdatingDuration(dateTime: countdown.endTime),
           Text(countdown.title, style: Theme.of(context).textTheme.headline4),
           Text(countdown.description),
         ],
