@@ -1,3 +1,4 @@
+import 'package:countdowner/resources/helper/representation_helper.dart';
 import 'package:flutter/material.dart';
 
 class UpdatingDuration extends StatelessWidget {
@@ -14,7 +15,7 @@ class UpdatingDuration extends StatelessWidget {
       stream: Stream.periodic(Duration(seconds: 1)),
       builder: (BuildContext context, AsyncSnapshot data) {
         return Text(
-          remaining.toString(),
+          RepresentationHelper.durationToString(remaining),
           style: style,
         );
       },

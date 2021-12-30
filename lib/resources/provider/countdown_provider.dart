@@ -15,7 +15,7 @@ class CountdownProvider {
         endTime: DateTime.now().add(duration),
         title: "Countdown di prova",
         description: "Descrizione di prova un po' più lunga dle titolo perché così deve essere",
-        coverUrl: "https://www.akamai.com/content/dam/site/im-demo/perceptual-standard.jpg?imbypass=true",
+        // coverUrl: "https://www.akamai.com/content/dam/site/im-demo/perceptual-standard.jpg?imbypass=true",
       ));
     }
 

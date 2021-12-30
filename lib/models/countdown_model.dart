@@ -6,13 +6,13 @@ part 'countdown_model.g.dart';
 class CountdownModel {
   final String title, description;
   final DateTime endTime;
-  final String coverUrl;
+  final String? coverUrl;
 
   CountdownModel({
     required this.title,
     required this.description,
     required this.endTime,
-    required this.coverUrl,
+    this.coverUrl,
   });
 
   factory CountdownModel.fromJson(Map<String, dynamic> parsedJson) => _$CountdownModelFromJson(parsedJson);

@@ -21,6 +21,11 @@ dependencies:
   # Utility
   json_annotation: ^4.4.0
 
+  # Grafica
+  palette_generator: ^0.3.2
+  swatcher: ^0.1.0
+  random_color: ^1.0.5
+
 
 dev_dependencies:
   flutter_test:
